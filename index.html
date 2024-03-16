@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Coursera Assignment </title>
+    </head>
+    <style>
+        /***BASE STYLE ***/
+        #menu1{
+            width: 30%;
+            padding: 10px;
+            background-color: aqua;
+            float: right;
+            clear: none;
+        }
+        #menu2{
+            width: 30%;
+            padding: 10px;
+            background-color: aquamarine;
+            float:right;
+            clear: none;
+        }
+        #menu3{
+            width: 30%;
+            padding: 10px;
+            background-color: blueviolet;
+            float:right;
+            clear:none
+        }
+        h1{
+          text-align: center;  
+        }
+        /***LARGE DEVICE***/
+        @media(min-width:992px){
+            #menu1, #menu2,#menu3{
+                width:30%;
+                padding: 10px;
+                border: 1px solid black;
+            }
+        }
+        /***TABLET VIEW***/
+        @media (min-width: 768px) and (max-width: 991px) {
+            #menu1, #menu2 {
+                width: 50%;
+                padding: 10px;
+                border: 1px solid black;
+                float: left;
+                clear: none;
+                box-sizing: border-box; 
+            }
+            #menu3{
+                width:100%;
+                padding: 10px;
+                border:1px solid black;
+                float: left;
+                clear: none;
+                box-sizing: border-box;
+            }
+        }
+        /***PHONE VIEW ***/
+        @media(max-width: 767px){
+            #menu1,#menu2,#menu3 {
+                width: 60%;
+                padding: 10px;
+                border: 1px solid black;
+                float: left;
+                clear: none;
+                box-sizing: border-box; 
+            }
+        }
+        
+    </style>
+    <body>
+        <h1>OUR MENU</h1>
+        <section id = menu1>
+            <h2>Chicken</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus corporis unde exercitationem, ratione ducimus at temporibus nostrum. Animi veritatis, hic expedita voluptas ad, doloribus ex veniam saepe rerum, eum quibusdam.</p>
+        </section>
+        <section id = menu2>
+            <h2>Beef</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur impedit dolor officia odit incidunt expedita eos ab voluptatum reprehenderit consequuntur dolore fuga, nulla placeat odio illum ipsum enim voluptates architecto?
+            </p>
+        </section>
+        <section id = menu3>
+            <h2>Pizza</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere amet ducimus culpa, quo sed neque optio assumenda consequatur officia magnam, laboriosam dolores! Tempora porro vel consectetur optio ex aut repellendus.
+            </p>
+        </section>
+    </body>
+</html>
